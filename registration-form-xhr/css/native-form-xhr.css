@@ -1,0 +1,40 @@
+label,
+legend,
+button {
+    user-select: none;
+}
+
+body {
+    border-left-color: aqua;
+}
+
+.main-title {
+    margin: 0;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.link-castom-form {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.form-widget:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.form-sectioin {
+    margin-bottom: 20px;
+}
+
+.list-reset {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.output-element {
+    padding: 0px 10px;
+    color: white;
+    background-color: tomato;
+}

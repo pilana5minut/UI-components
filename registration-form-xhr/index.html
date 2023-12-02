@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>registration form xhr</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon"
+        href="../favicon.ico"
+        type="image/x-icon">
+  <link rel="stylesheet"
+        href="css/entry-styles.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- <h1 class="main-title">Native elements form</h1>
+
+    <a href="../registration-form-castom/index.html"
+       class="link-castom-form"
+       target="_blank">Link castom form</a> -->
+
+    <div class="output-element"
+         id="output-element"></div>
+
+    <form action=""
+          method="get"
+          id="form-reg">
+      <fieldset>
+        <legend>Registration form</legend>
+
+        <div class="form-widget">
+          <label for="user-name">Итя пользователя: </label>
+          <input type="text"
+                 name="field-name"
+                 value="Maxim"
+                 id="user-name">
+        </div>
+
+        <div class="form-widget">
+          <label for="email">Электронная почта: </label>
+          <input type="email"
+                 name="field-email"
+                 value="maxim@mail.com"
+                 id="email"
+                 autocomplete="email">
+        </div>
+
+        <div class="form-widget">
+          <label for="password">Пароль: </label>
+          <input type="password"
+                 name="field-password"
+                 value="p1a2s3s4w5o6r7d"
+                 id="password"
+                 autocomplete="new-password">
+        </div>
+
+        <div class="form-widget">
+          <label for="continent">Континент: </label>
+          <select name="select-continent"
+                  id="continent">
+            <option value="">Выберите континент</option>
+            <option value="eurasia">Eurasia</option>
+            <option value="north-america">North America</option>
+            <option value="south-america">South America</option>
+            <option value="africa">Africa</option>
+            <option value="australia">Australia</option>
+          </select>
+        </div>
+
+        <fieldset class="form-sectioin">
+          <legend>Пол: </legend>
+          <div class="form-widget">
+            <ul class="list-reset">
+
+              <li>
+                <input type="radio"
+                       name="radio-gender"
+                       value="male"
+                       id="user-gender-male">
+                <label for="user-gender-male">Мужчина</label>
+              </li>
+
+              <li>
+                <input type="radio"
+                       name="radio-gender"
+                       value="female"
+                       id="user-gender-female">
+                <label for="user-gender-female">Женщина</label>
+              </li>
+
+            </ul>
+          </div>
+        </fieldset>
+
+        <div class="form-widget">
+          <label for="id-attached">Выберите файл: </label>
+          <input type="file"
+                 name="attached-file"
+                 id="id-attached"
+                 multiple>
+        </div>
+
+        <fieldset class="form-sectioin">
+          <legend>Подтверждение: </legend>
+          <div class="form-widget">
+            <ul class="list-reset">
+
+              <li>
+                <input type="checkbox"
+                       name="check-consent-to-the-processing"
+                       id="consent">
+                <label for="consent">Согласие на обработку персональных данных</label>
+              </li>
+
+              <li>
+                <input type="checkbox"
+                       name="check-subscription-to-mailing-list"
+                       id="mailing-list">
+                <label for="mailing-list">Подписка на почтовую рассылку</label>
+              </li>
+
+            </ul>
+          </div>
+        </fieldset>
+
+        <div class="form-widget">
+          <button class="btn-submit"
+                  type="submit"
+                  value="sign-up">Submit</button>
+          <button class="btn-check"
+                  type="button"
+                  value="sign-up">Check form Data</button>
+          <button class="btn-submit-xhr"
+                  type="button"
+                  value="sign-up">Submit XHR</button>
+        </div>
+
+        <div>
+          <input type="hidden"
+                 name="field-hidden"
+                 value="registration-form-token">
+        </div>
+
+      </fieldset>
+    </form>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>window.jQuery || document.write('<script src="../jquery-3.7.1.js"><\/script>');</script>
+  <script src="js/entry-modules.js"
+          type="module"></script>
+</body>
+
+</html>
